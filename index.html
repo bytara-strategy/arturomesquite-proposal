@@ -68,10 +68,21 @@ blockquote cite a{color:inherit;text-decoration:none}
 /* CAROUSEL */
 .sv-post-label{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--highlight);margin-bottom:18px;font-weight:500}
 .sv-frame{background:var(--soft);padding:24px;margin-bottom:16px}
-.sv-stage{position:relative;width:100%;max-width:340px;margin:0 auto;aspect-ratio:4/5;overflow:hidden}
-.sv-slide-container{position:absolute;top:0;left:0;width:100%;height:100%}
-.sv-slide{width:100%;height:100%;position:relative;display:flex;align-items:center;justify-content:center;padding:44px 32px;box-sizing:border-box}
-.sv-nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0 2px;max-width:340px;margin:0 auto}
+.sv-stage-outer{width:476px;height:595px;overflow:hidden;margin:0 auto;position:relative;}
+.sv-stage{width:1080px;height:1350px;transform:scale(0.44);transform-origin:top left;position:absolute;top:0;left:0;}
+.sv-slide{width:1080px;height:1350px;position:absolute;top:0;left:0;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:88px 100px;box-sizing:border-box;}
+.sv-nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0 2px;max-width:476px;margin:0 auto;}
+.s-label{font-size:22px;font-weight:500;letter-spacing:4px;text-transform:uppercase;font-family:DM Sans,sans-serif;margin:0 0 28px;}
+.s-h{font-size:96px;font-weight:700;line-height:0.97;font-family:Cormorant Garamond,serif;margin:0;}
+.s-h.lg{font-size:120px;line-height:0.95;}
+.s-h.sm{font-size:76px;line-height:1.05;}
+.s-h.xs{font-size:62px;line-height:1.1;}
+.s-body{font-size:34px;font-weight:300;line-height:1.9;font-family:DM Sans,sans-serif;margin:0;}
+.s-body.sm{font-size:30px;font-weight:300;line-height:1.9;}
+.s-accent{font-size:64px;font-weight:300;line-height:1.2;font-style:italic;font-family:Cormorant Garamond,serif;margin:0;}
+.s-accent.lg{font-size:80px;line-height:1.15;}
+.s-accent.sm{font-size:54px;line-height:1.2;}
+.s-hr{width:48px;height:1px;display:block;margin:36px 0;}
 .sv-btn{background:none;border:1px solid var(--ink);color:var(--ink);width:34px;height:34px;cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center;transition:all .15s}
 .sv-btn:hover{background:var(--ink);color:var(--bg)}
 .sv-counter-label{font-size:11px;color:var(--slate);font-family:'DM Sans',sans-serif;letter-spacing:.1em}
@@ -247,9 +258,9 @@ footer strong{color:rgba(244,243,239,.65);font-weight:500}
     <p style="max-width:560px;color:var(--slate);margin-bottom:52px;">I read more than 20 of your full captions before writing these. Each one is in your voice - your sentence rhythm, your vocabulary, your opening moves. Swipe through each to see how they would look in your feed.</p>
 
     <!-- POST 1: MINDSET SHIFT -->
-    <div class="sv-post-label">Mindset Shift - Pushing Harder is a Stress Response</div>
+    <div class="sv-post-label">Mindset Shift - Pushing harder is not a performance strategy</div>
     <div class="sv-frame" id="sv-p1">
-      <div class="sv-stage"><div class="sv-slide-container"></div></div>
+      <div class="sv-stage-outer"><div class="sv-stage sv-slide-container"></div></div>
       <div class="sv-nav">
         <button class="sv-btn sv-prev">&#8592;</button>
         <span class="sv-counter-label"></span>
@@ -257,21 +268,21 @@ footer strong{color:rgba(244,243,239,.65);font-weight:500}
       </div>
     </div>
     <div class="sv-caption">
-      <p>Pushing harder is not a performance strategy. It's a stress response.</p>
-      <p>For years I watched driven, disciplined people - athletes, executives, champions - grind harder and wonder why they were getting worse.</p>
-      <p>The performance industry gave them one answer: more.</p>
-      <p>But more doesn't fix a dysregulated nervous system. It accelerates the breakdown.</p>
-      <p>Your brain and body are one operating system. When the system is overloaded, adding more input doesn't produce better output. It crashes the hardware.</p>
-      <p>The shift I see change everything: learning to regulate your nervous system first - before you try to optimize anything else.</p>
-      <p>State control is not a soft skill. It's the foundation every other skill runs on.</p>
+      <p>The most driven people I work with are also the most confused.</p>
+      <p>Not because they lack clarity. Because they have done everything right - and something still is not working.</p>
+      <p>More reps. Better protocols. Cleaner routines. Same ceiling.</p>
+      <p>Here is what I have learned working with world champions, F1 drivers, and executives at the top of their fields: the problem is almost never the work. It is the system running beneath the work.</p>
+      <p>Your nervous system controls your clarity, your decisions under pressure, your ability to recover. When it is dysregulated, every tool you add lands on top of a system that cannot absorb it. You push more. You get less. You start to wonder if the problem is you.</p>
+      <p>It is not.</p>
+      <p>Regulating comes before optimizing. Every time.</p>
       <p>Save this for the next time someone tells you to just work harder.</p>
       <p>#HighPerformance #NervousSystemReset #NeuroResetMiami #MindsetShift #LeadershipMindset #EmotionalIntelligence #PeakPerformance #HolisticPerformance #MindBodyConnection #MiamiWellness #NeurophysioTherapy #BrainHealth #ExecutiveCoach #AthletePerformance #HighPerformers #NervousSystemRegulation #IdentityShift #ConsciousLeadership #MiamiCoach #PerformanceMindset</p>
     </div>
 
     <!-- POST 2: STORYTELLING -->
-    <div class="sv-post-label">Story Post - Dylan Medler, F1 Driver</div>
+    <div class="sv-post-label">Storytelling - He came in at eighteen</div>
     <div class="sv-frame" id="sv-p2">
-      <div class="sv-stage"><div class="sv-slide-container"></div></div>
+      <div class="sv-stage-outer"><div class="sv-stage sv-slide-container"></div></div>
       <div class="sv-nav">
         <button class="sv-btn sv-prev">&#8592;</button>
         <span class="sv-counter-label"></span>
@@ -279,21 +290,21 @@ footer strong{color:rgba(244,243,239,.65);font-weight:500}
       </div>
     </div>
     <div class="sv-caption">
-      <p>He came in at eighteen. Said his body was failing him. His dreams weren't.</p>
-      <p>Dylan Medler. Race car driver. Competing internationally. And hitting a wall no amount of training was breaking through.</p>
-      <p>He'd been told to push harder. Get tougher. More discipline, more effort. None of it worked.</p>
-      <p>Because the problem wasn't discipline. It was his nervous system - the operating system beneath everything else. The one no coach had ever touched.</p>
-      <p>We didn't work on his mindset. We worked on the system running it.</p>
-      <p>Dylan is twenty-one now. Rising F1 driver. Competing across the US and Europe. Same person. Recalibrated system.</p>
-      <p>When your nervous system is regulated, clarity comes back without forcing it. Reflexes sharpen. Confidence stops requiring effort. You don't become a different person. You become the one that was already in there.</p>
-      <p>Save this for the moment you realize the block was never your effort.</p>
+      <p>Dylan Medler is twenty-one now. Racing across the US and Europe. Rising through Formula One.</p>
+      <p>Three years ago he walked in at eighteen with a body that would not cooperate and a career that could not wait.</p>
+      <p>He was not lazy. He was not undisciplined. He had already been told to push harder - and he was doing it.</p>
+      <p>What no one had looked at was the nervous system running beneath all of it.</p>
+      <p>We did not work on his technique. We did not set goals or redesign his training program.</p>
+      <p>We worked on the operating system. The layer beneath the effort.</p>
+      <p>He did not become a different person. He became the one that was already in there, once the system stopped fighting itself.</p>
+      <p>That is the only kind of change that lasts.</p>
       <p>#NeuroResetMiami #NervousSystemRegulation #HighPerformance #AthletePerformance #FormulaOne #PeakPerformance #MindBodyConnection #NeurophysioTherapy #MindsetShift #IdentityShift #DylanMedler #HighPerformers #NervousSystemReset #EliteAthletes #SportsMindset #MiamiWellness #MiamiCoach #BrainHealth #HolisticPerformance #RacingMindset</p>
     </div>
 
-    <!-- POST 3: CONVERSION -->
-    <div class="sv-post-label">Conversion Post - Discovery Call, Comment RESET</div>
+    <!-- POST 3: SALES -->
+    <div class="sv-post-label">Sales Post - Comment RESET</div>
     <div class="sv-frame" id="sv-p3">
-      <div class="sv-stage"><div class="sv-slide-container"></div></div>
+      <div class="sv-stage-outer"><div class="sv-stage sv-slide-container"></div></div>
       <div class="sv-nav">
         <button class="sv-btn sv-prev">&#8592;</button>
         <span class="sv-counter-label"></span>
@@ -301,18 +312,18 @@ footer strong{color:rgba(244,243,239,.65);font-weight:500}
       </div>
     </div>
     <div class="sv-caption">
-      <p>For years I watched driven people grind harder and wonder why they were getting worse.</p>
-      <p>More effort. Same ceiling. More confusion. The coaching industry had one answer: more.</p>
-      <p>But more doesn't fix what's underneath. It accelerates the breakdown.</p>
-      <p>Your nervous system is the hardware everything else runs on. When it's dysregulated, adding more input doesn't produce better output - it compounds the problem. You push harder. You get less. And you start believing the problem is you.</p>
-      <p>It isn't.</p>
-      <p>What I do isn't about mindset. It's about resetting the system that controls your clarity, your recovery, your decisions under pressure - before you try to optimize anything else.</p>
-      <p>I have [X] spots open this week for discovery calls. Comment RESET below and I'll send you the details directly.</p>
+      <p>I take [X] new clients a week. In Miami. In person.</p>
+      <p>The people who reach out usually have one thing in common: they have already tried everything. The coaching, the frameworks, the morning protocols. They are not looking for more input.</p>
+      <p>They are looking for an explanation.</p>
+      <p>Here it is: you cannot build sustainable performance on top of a dysregulated nervous system. Every habit, every routine, every mindset tool you have added - it is all running on hardware that is overloaded. More input into a crashed system does not produce better output. It accelerates the breakdown.</p>
+      <p>NeuroReset works on the layer beneath your decisions - the nervous system itself. When that system recalibrates, the clarity you have been chasing starts coming back without forcing it.</p>
+      <p>That is what the discovery call covers.</p>
+      <p>Comment RESET below and I will send you the details directly.</p>
       <p>#NeuroResetMiami #NervousSystemReset #HighPerformance #PeakPerformance #NervousSystemRegulation #AthletePerformance #ExecutiveCoach #MindBodyConnection #NeurophysioTherapy #BrainHealth #StateControl #IdentityShift #MiamiWellness #HolisticPerformance #HighPerformers #MindsetShift #MiamiCoach #ConsciousLeadership #PerformanceMindset #NeuroCoach</p>
     </div>
 
     <div class="sample-note">
-      I wrote these three posts after reading more than 20 of your full captions. I deliberately mirrored your sentence rhythm, your vocabulary, and your opening moves - so you can see that I am not applying my style to your brand. I am working from inside your voice. If we work together, every post goes through this same process before you see it.
+      I wrote these three posts after reading more than 20 of your full captions. I mirrored your sentence rhythm, your vocabulary, and your opening moves deliberately - so you can see I am not applying my style to your brand. I am working from inside your voice. If we work together, every post goes through this same process before you see it.
     </div>
   </div>
 </section>
@@ -375,172 +386,118 @@ var SVPOSTS = [
   {
     id: 'sv-p1',
     slides: [
-      {
-        bg: '#143c64',
-        hc: 'rgba(244,243,239,0.4)',
-        num: '01', tot: '09',
-        html: '<div style="width:100%;text-align:center;font-family:Cormorant Garamond,serif;font-size:22px;font-weight:500;line-height:1.42;color:#f4f3ef;">Pushing harder is not a performance strategy.<br><br>It\'s a stress response.</div>'
-      },
-      {
-        bg: '#f4f3ef',
-        hc: 'rgba(28,28,40,0.32)',
-        num: '02', tot: '09',
-        html: '<div style="width:100%;font-family:DM Sans,sans-serif;font-size:15px;line-height:1.72;color:#1c1c28;">For years, the formula was simple.<br><br>More hours. More effort. More willpower.<br><br>Push through the resistance - and results would follow.</div>'
-      },
-      {
-        bg: '#f4f3ef',
-        hc: 'rgba(28,28,40,0.32)',
-        num: '03', tot: '09',
-        html: '<div style="width:100%;font-family:DM Sans,sans-serif;font-size:14px;line-height:1.72;color:#1c1c28;">This worked.<br>For a while.<br><br>Because the performance industry built its entire identity around this one idea:<br><br><em style="font-family:Cormorant Garamond,serif;font-size:18px;">If it\'s not hard, you\'re not working hard enough.</em><br><br>Sleep was for the weak. Limits were a mindset problem. Burnout was just a sign you needed to push more.</div>'
-      },
-      {
-        bg: '#1c1c28',
-        hc: 'rgba(244,243,239,0.3)',
-        num: '04', tot: '09',
-        html: '<div style="width:100%;font-family:DM Sans,sans-serif;font-size:14px;line-height:1.78;color:#f4f3ef;">Here\'s what I see - every week - in my practice.<br><br>Champions who are pushing harder than ever.<br>And performing worse than they have in years.<br><br>Not because they lack discipline.<br>Not because they lack desire.<br><br><strong>They have a nervous system problem.</strong></div>'
-      },
-      {
-        bg: '#f4f3ef',
-        hc: 'rgba(28,28,40,0.32)',
-        num: '05', tot: '09',
-        html: '<div style="width:100%;font-family:DM Sans,sans-serif;font-size:14px;line-height:1.75;color:#1c1c28;"><strong>Regulated:</strong> you see clearly, decide sharply, recover fast.<br><br><strong>Dysregulated:</strong> you push harder, produce less, and blame yourself for not being enough.<br><br>Most performance advice tries to change what you do - from inside a dysregulated system.<br><br>That\'s like upgrading software on a computer that\'s overheating. The hardware will keep crashing.</div>'
-      },
-      {
-        bg: '#143c64',
-        hc: 'rgba(244,243,239,0.4)',
-        num: '06', tot: '09',
-        html: '<div style="width:100%;font-family:Cormorant Garamond,serif;font-size:18px;font-style:italic;line-height:1.55;color:#f4f3ef;">"Every session accelerates my performance - not just physically, but mentally and emotionally. I\'ve gained deep clarity on my core values, and now everything in my life feels aligned and working for me."</div>'
-      },
-      {
-        bg: '#f4f3ef',
-        hc: 'rgba(28,28,40,0.32)',
-        num: '07', tot: '09',
-        html: '<div style="width:100%;font-family:DM Sans,sans-serif;font-size:14px;line-height:1.75;color:#1c1c28;">The new model isn\'t about doing less.<br><br>It\'s about leading your nervous system before you lead anything else.<br><br>When your system is regulated - you don\'t need more effort. The clarity returns on its own. Decisions sharpen without forcing them.<br><br>State control is not a soft skill. It is the skill that makes all other skills work.</div>'
-      },
-      {
-        bg: '#1c1c28',
-        hc: 'rgba(244,243,239,0.3)',
-        num: '08', tot: '09',
-        html: '<div style="width:100%;text-align:center;font-family:Cormorant Garamond,serif;font-size:22px;line-height:1.42;color:#f4f3ef;">You can keep pushing.<br><br>Or you can learn to regulate.<br><br>One burns the system.<br>The other rebuilds it.</div>'
-      },
-      {
-        bg: '#f4f3ef',
-        hc: 'rgba(28,28,40,0.32)',
-        num: '09', tot: '09',
-        html: '<div style="width:100%;text-align:center;font-family:DM Sans,sans-serif;font-size:14px;line-height:1.75;color:#143c64;">I share the neuroscience behind sustained peak performance - the difference between high performers who last and those who crash at the top.<br><br>Save this for the next time someone tells you to just work harder.</div>'
-      }
+    {
+      bg: '#143c64', hc: 'rgba(240,237,232,0.4)',
+      html: '<p class="s-h lg" style="color:#f0ede8;">Pushing harder<br>is not a performance<br>strategy.</p><div class="s-hr" style="background:rgba(240,237,232,0.25);margin:44px 0;"></div><p class="s-accent" style="color:#c8b49a;">It\'s a stress response.</p>'
+    },
+    {
+      bg: '#f4f3ef', hc: 'rgba(28,28,40,0.35)',
+      html: '<p class="s-label" style="color:#8b5e3c;">THE OLD BELIEF</p><p class="s-h sm" style="color:#1c1c28;">More hours.<br>More effort.<br>More willpower.</p><div class="s-hr" style="background:#8b5e3c;"></div><p class="s-accent sm" style="color:#8b5e3c;">Push through the resistance -<br>results would follow.</p>'
+    },
+    {
+      bg: '#143c64', hc: 'rgba(240,237,232,0.4)',
+      html: '<p class="s-body" style="color:rgba(240,237,232,0.72);">The performance industry built its entire identity around one idea:</p><div class="s-hr" style="background:rgba(240,237,232,0.25);"></div><p class="s-h sm" style="color:#f0ede8;">If it\'s not hard,<br>you\'re not working<br>hard enough.</p>'
+    },
+    {
+      bg: '#f4f3ef', hc: 'rgba(28,28,40,0.35)',
+      html: '<p class="s-label" style="color:#8b5e3c;">WHAT I SEE EVERY WEEK</p><p class="s-body" style="color:#1c1c28;">Champions who are pushing harder than ever. And performing worse than they have in years.</p><div class="s-hr" style="background:#8b5e3c;"></div><p class="s-h xs" style="color:#1c1c28;">They don\'t have a motivation problem.<br>They have a nervous system problem.</p>'
+    },
+    {
+      bg: '#143c64', hc: 'rgba(240,237,232,0.4)',
+      html: '<p class="s-body sm" style="color:rgba(240,237,232,0.72);">Regulated: you see clearly, decide sharply, recover fast.</p><p class="s-body sm" style="color:rgba(240,237,232,0.72);">Dysregulated: you push harder, produce less, blame yourself.</p><div class="s-hr" style="background:rgba(240,237,232,0.25);"></div><p class="s-accent sm" style="color:#c8b49a;">That\'s like upgrading software<br>on a computer that\'s overheating.</p>'
+    },
+    {
+      bg: '#f4f3ef', hc: 'rgba(28,28,40,0.35)',
+      html: '<p class="s-body" style="color:#1c1c28;">A world kickboxing champion sat across from me. Peak of his career. His sharpness had dropped.</p><div class="s-hr" style="background:#8b5e3c;"></div><p class="s-body sm" style="color:#5a5a6a;">We didn\'t work on technique.<br>We didn\'t talk about mindset or goals.<br>We worked on his nervous system.</p>'
+    },
+    {
+      bg: '#143c64', hc: 'rgba(240,237,232,0.4)',
+      html: '<p class="s-body sm" style="color:rgba(240,237,232,0.72);">When your system is regulated -</p><p class="s-h xs" style="color:#f0ede8;">State control is not<br>a soft skill.</p><div class="s-hr" style="background:rgba(240,237,232,0.25);"></div><p class="s-accent sm" style="color:#c8b49a;">It\'s the skill that makes<br>all other skills work.</p>'
+    },
+    {
+      bg: '#f4f3ef', hc: 'rgba(28,28,40,0.35)',
+      html: '<p class="s-h sm" style="color:#1c1c28;">You can keep pushing.</p><div class="s-hr" style="background:#8b5e3c;"></div><p class="s-h sm" style="color:#8b5e3c;">Or you can learn<br>to regulate.</p><p class="s-body sm" style="color:#5a5a6a;margin-top:28px;">One burns the system.<br>The other rebuilds it.</p>'
+    },
+    {
+      bg: '#143c64', hc: 'rgba(240,237,232,0.4)',
+      html: '<p class="s-body" style="color:#f0ede8;">The high performers who last longest at the top aren\'t the ones who push hardest.</p><div class="s-hr" style="background:rgba(240,237,232,0.25);"></div><p class="s-body sm" style="color:rgba(240,237,232,0.72);">Save this for the next time<br>someone tells you to just work harder.</p>'
+    }
     ]
   },
+
   {
     id: 'sv-p2',
     slides: [
-      {
-        bg: '#1c1c28',
-        hc: 'rgba(244,243,239,0.3)',
-        num: '01', tot: '09',
-        html: '<div style="width:100%;font-family:Cormorant Garamond,serif;font-size:22px;font-weight:500;line-height:1.42;color:#f4f3ef;">He came in at eighteen.<br><br>Said his body was failing him.<br>His dreams weren\'t.</div>'
-      },
-      {
-        bg: '#f4f3ef',
-        hc: 'rgba(28,28,40,0.32)',
-        num: '02', tot: '09',
-        html: '<div style="width:100%;font-family:DM Sans,sans-serif;font-size:14px;line-height:1.75;color:#1c1c28;">Dylan Medler.<br>Race car driver.<br><br>Already competing at an international level.<br><br>Physical setbacks. Mental blocks. And a body that wouldn\'t keep up with what he knew he was built for.<br><br>He\'d been told the answer was simple.<br>Train harder. Push through. Get tougher.<br><br>It wasn\'t working.</div>'
-      },
-      {
-        bg: '#143c64',
-        hc: 'rgba(244,243,239,0.4)',
-        num: '03', tot: '09',
-        html: '<div style="width:100%;font-family:DM Sans,sans-serif;font-size:15px;line-height:1.75;color:#f4f3ef;">I looked at him and saw something different.<br><br>Not weakness.<br>Not a mental problem.<br><br>A nervous system that had never been trained to hold the speed he was chasing.</div>'
-      },
-      {
-        bg: '#f4f3ef',
-        hc: 'rgba(28,28,40,0.32)',
-        num: '04', tot: '09',
-        html: '<div style="width:100%;font-family:DM Sans,sans-serif;font-size:15px;line-height:1.75;color:#1c1c28;">We didn\'t work on his mindset.<br>We didn\'t set goals.<br>We didn\'t talk about discipline.<br><br>We worked on the system running underneath all of it.<br><br>His nervous system.</div>'
-      },
-      {
-        bg: '#f4f3ef',
-        hc: 'rgba(28,28,40,0.32)',
-        num: '05', tot: '09',
-        html: '<div style="width:100%;font-family:DM Sans,sans-serif;font-size:15px;line-height:1.75;color:#1c1c28;">Dylan is twenty-one now.<br><br>Rising star in Formula One.<br>Competing across the US and Europe.<br><br>Same person.<br>Recalibrated system.<br>Different everything.</div>'
-      },
-      {
-        bg: '#f4f3ef',
-        hc: 'rgba(28,28,40,0.32)',
-        num: '06', tot: '09',
-        html: '<div style="width:100%;font-family:Cormorant Garamond,serif;font-size:21px;line-height:1.45;color:#143c64;">Physical and mental setbacks aren\'t character problems.<br><br>They\'re nervous system problems.</div>'
-      },
-      {
-        bg: '#143c64',
-        hc: 'rgba(244,243,239,0.4)',
-        num: '07', tot: '09',
-        html: '<div style="width:100%;font-family:DM Sans,sans-serif;font-size:14px;line-height:1.78;color:#f4f3ef;">Your nervous system controls your speed. Your focus. Your confidence.<br><br>Not as motivational language. As biology.<br><br>When it\'s dysregulated: you push harder, you get less, and you start believing the problem is you.<br><br>It isn\'t.<br><br>It\'s the system running beneath everything else. The one no one taught you to train.</div>'
-      },
-      {
-        bg: '#f4f3ef',
-        hc: 'rgba(28,28,40,0.32)',
-        num: '08', tot: '09',
-        html: '<div style="width:100%;font-family:DM Sans,sans-serif;font-size:14px;line-height:1.75;color:#1c1c28;">Maybe you\'ve been working harder than anyone around you.<br><br>Getting less.<br><br>You\'ve tried the frameworks. The routines. The mindset tools.<br><br>And something deeper is still off.<br><br>That\'s not a you problem.<br><br>It\'s a nervous system that hasn\'t been trained to carry what you\'re building.</div>'
-      },
-      {
-        bg: '#1c1c28',
-        hc: 'rgba(244,243,239,0.3)',
-        num: '09', tot: '09',
-        html: '<div style="width:100%;text-align:center;font-family:Cormorant Garamond,serif;font-size:20px;font-style:italic;line-height:1.5;color:#f4f3ef;">Follow if that\'s where you\'re headed.<br><br>Save this for the moment you realize the block was never your effort.</div>'
-      }
+    {
+      bg: '#143c64', hc: 'rgba(240,237,232,0.4)',
+      html: '<p class="s-h lg" style="color:#f0ede8;">He came in<br>at eighteen.</p><div class="s-hr" style="background:rgba(240,237,232,0.25);margin:44px 0;"></div><p class="s-accent" style="color:#c8b49a;">Said his body was failing him.<br>His dreams weren\'t.</p>'
+    },
+    {
+      bg: '#f4f3ef', hc: 'rgba(28,28,40,0.35)',
+      html: '<p class="s-label" style="color:#8b5e3c;">DYLAN MEDLER</p><p class="s-body" style="color:#1c1c28;">Race car driver. Already competing internationally. Physical setbacks. Mental blocks. A body that wouldn\'t keep up with what he knew he was built for.</p><div class="s-hr" style="background:#8b5e3c;"></div><p class="s-body sm" style="color:#5a5a6a;">He\'d been told: train harder, push through, get tougher.<br>It wasn\'t working.</p>'
+    },
+    {
+      bg: '#143c64', hc: 'rgba(240,237,232,0.4)',
+      html: '<p class="s-body" style="color:rgba(240,237,232,0.72);">I looked at him and saw something different.</p><div class="s-hr" style="background:rgba(240,237,232,0.25);"></div><p class="s-h xs" style="color:#f0ede8;">Not weakness.<br>A nervous system<br>never trained<br>for his speed.</p>'
+    },
+    {
+      bg: '#f4f3ef', hc: 'rgba(28,28,40,0.35)',
+      html: '<p class="s-body sm" style="color:#5a5a6a;">We didn\'t work on his mindset.<br>We didn\'t set goals.<br>We didn\'t talk about discipline.</p><div class="s-hr" style="background:#8b5e3c;"></div><p class="s-h xs" style="color:#1c1c28;">We worked on the system<br>running underneath<br>all of it.</p>'
+    },
+    {
+      bg: '#143c64', hc: 'rgba(240,237,232,0.4)',
+      html: '<p class="s-label" style="color:#c8b49a;">THREE YEARS LATER</p><p class="s-h xs" style="color:#f0ede8;">Dylan is twenty-one.<br>Rising star in Formula One.<br>Competing across the US and Europe.</p><div class="s-hr" style="background:rgba(240,237,232,0.25);"></div><p class="s-body sm" style="color:rgba(240,237,232,0.72);">Same person.<br>Recalibrated system.<br>Different everything.</p>'
+    },
+    {
+      bg: '#f4f3ef', hc: 'rgba(28,28,40,0.35)',
+      html: '<p class="s-h sm" style="color:#1c1c28;">Physical and mental setbacks<br>aren\'t character problems.</p><div class="s-hr" style="background:#8b5e3c;"></div><p class="s-accent" style="color:#8b5e3c;">They\'re nervous system problems.</p>'
+    },
+    {
+      bg: '#143c64', hc: 'rgba(240,237,232,0.4)',
+      html: '<p class="s-body" style="color:#f0ede8;">Maybe you\'ve been working harder than anyone around you.</p><div class="s-hr" style="background:rgba(240,237,232,0.25);"></div><p class="s-body sm" style="color:rgba(240,237,232,0.72);">Getting less. The frameworks. The routines. The mindset tools - and something deeper is still off.</p><p class="s-body sm" style="color:#c8b49a;margin-top:20px;">That\'s not a you problem.</p>'
+    },
+    {
+      bg: '#f4f3ef', hc: 'rgba(28,28,40,0.35)',
+      html: '<p class="s-body" style="color:#1c1c28;">He didn\'t become a different person.</p><p class="s-h xs" style="color:#1c1c28;">He became the one<br>that was already<br>in there.</p><div class="s-hr" style="background:#8b5e3c;"></div><p class="s-body sm" style="color:#5a5a6a;">Save this for the moment you realize<br>the block was never your effort.</p>'
+    }
     ]
   },
+
   {
     id: 'sv-p3',
     slides: [
-      {
-        bg: '#1c1c28',
-        hc: 'rgba(244,243,239,0.3)',
-        num: '01', tot: '08',
-        html: '<div style="width:100%;text-align:center;font-family:Cormorant Garamond,serif;font-size:21px;font-weight:500;line-height:1.42;color:#f4f3ef;">YOU DON\'T HAVE A DISCIPLINE PROBLEM.<br><br>You have a nervous system that\'s never been trained to carry what you\'re building.</div>'
-      },
-      {
-        bg: '#f4f3ef',
-        hc: 'rgba(28,28,40,0.32)',
-        num: '02', tot: '08',
-        html: '<div style="width:100%;font-family:DM Sans,sans-serif;font-size:15px;line-height:1.72;color:#1c1c28;">I know. You\'ve done the work.<br><br>The coaching, the routines, the mindset reps - more than most people in your field.<br><br>And you\'re still hitting a ceiling no amount of effort is breaking through.</div>'
-      },
-      {
-        bg: '#f4f3ef',
-        hc: 'rgba(28,28,40,0.32)',
-        num: '03', tot: '08',
-        html: '<div style="width:100%;font-family:DM Sans,sans-serif;font-size:14px;line-height:1.75;color:#1c1c28;">Here\'s what nobody\'s told you:<br><br>You can\'t optimize behavior from inside a dysregulated system.<br><br>Every framework, every morning routine, every high-performance habit you\'ve built - runs on top of your nervous system.<br><br>If that system is overloaded, the tools don\'t land the way they should.<br><br>It\'s not the tools. It\'s the hardware they\'re running on.</div>'
-      },
-      {
-        bg: '#143c64',
-        hc: 'rgba(244,243,239,0.4)',
-        num: '04', tot: '08',
-        html: '<div style="width:100%;font-family:DM Sans,sans-serif;font-size:14px;line-height:1.78;color:#f4f3ef;">NeuroReset isn\'t coaching.<br><br>It\'s a direct neurological intervention - working on the operating system beneath your decisions, your reflexes, your focus, and your stress response.<br><br>When that system is recalibrated, the clarity you\'ve been chasing comes back without forcing it.</div>'
-      },
-      {
-        bg: '#f4f3ef',
-        hc: 'rgba(28,28,40,0.32)',
-        num: '05', tot: '08',
-        html: '<div style="width:100%;font-family:DM Sans,sans-serif;font-size:14px;line-height:1.75;color:#1c1c28;">I\'ve worked with kickboxing world champions, F1 drivers, and executives who had every reason to be performing at their best - and weren\'t.<br><br>The block wasn\'t their effort.<br><br>It was the layer beneath their effort that no one had ever touched.</div>'
-      },
-      {
-        bg: '#f4f3ef',
-        hc: 'rgba(28,28,40,0.32)',
-        num: '06', tot: '08',
-        html: '<div style="width:100%;text-align:center;font-family:Cormorant Garamond,serif;font-size:21px;font-style:italic;line-height:1.5;color:#143c64;">The high performers who last longest at the top aren\'t the ones who push hardest.<br><br>They\'re the ones who learned to regulate first.</div>'
-      },
-      {
-        bg: '#f4f3ef',
-        hc: 'rgba(28,28,40,0.32)',
-        num: '07', tot: '08',
-        html: '<div style="width:100%;font-family:DM Sans,sans-serif;font-size:14px;line-height:1.75;color:#1c1c28;">Energy rebuilds from the inside.<br><br>State control becomes a baseline you operate from - not a skill you have to constantly remember.<br><br>Same person.<br>Different operating system.</div>'
-      },
-      {
-        bg: '#1c1c28',
-        hc: 'rgba(244,243,239,0.3)',
-        num: '08', tot: '08',
-        html: '<div style="width:100%;text-align:center;font-family:DM Sans,sans-serif;font-size:14px;line-height:1.78;color:#f4f3ef;">I take [X] new clients each week - in-person, in Miami.<br><br><span style="font-family:Cormorant Garamond,serif;font-size:24px;font-style:italic;letter-spacing:.04em;">Comment RESET below.</span><br><br>I\'ll send you the details on the discovery call - what it covers, what it isn\'t, and whether this is actually the right fit for where you are.</div>'
-      }
+    {
+      bg: '#143c64', hc: 'rgba(240,237,232,0.4)',
+      html: '<p class="s-h lg" style="color:#f0ede8;">You don\'t have<br>a discipline problem.</p>'
+    },
+    {
+      bg: '#f4f3ef', hc: 'rgba(28,28,40,0.35)',
+      html: '<p class="s-h sm" style="color:#1c1c28;">You have a nervous system<br>that\'s never been trained<br>to carry what you\'re building.</p>'
+    },
+    {
+      bg: '#143c64', hc: 'rgba(240,237,232,0.4)',
+      html: '<p class="s-body" style="color:rgba(240,237,232,0.72);">The coaching. The routines. The mindset reps - more than most people in your field.</p><div class="s-hr" style="background:rgba(240,237,232,0.25);"></div><p class="s-accent sm" style="color:#c8b49a;">And you\'re still hitting a ceiling<br>no amount of effort is breaking through.</p>'
+    },
+    {
+      bg: '#f4f3ef', hc: 'rgba(28,28,40,0.35)',
+      html: '<p class="s-label" style="color:#8b5e3c;">WHAT NOBODY TOLD YOU</p><p class="s-h xs" style="color:#1c1c28;">You can\'t optimize behavior<br>from inside a dysregulated<br>nervous system.</p><div class="s-hr" style="background:#8b5e3c;"></div><p class="s-body sm" style="color:#5a5a6a;">Every framework runs on your nervous system.<br>If the system is overloaded, the tools don\'t land.</p>'
+    },
+    {
+      bg: '#143c64', hc: 'rgba(240,237,232,0.4)',
+      html: '<p class="s-h sm" style="color:#f0ede8;">It\'s not the tools.</p><div class="s-hr" style="background:rgba(240,237,232,0.25);margin:44px 0;"></div><p class="s-h xs" style="color:#c8b49a;">It\'s the hardware<br>they\'re running on.</p>'
+    },
+    {
+      bg: '#f4f3ef', hc: 'rgba(28,28,40,0.35)',
+      html: '<p class="s-body" style="color:#1c1c28;">Kickboxing world champions. F1 drivers. Executives who had every reason to be at their best - and weren\'t.</p><div class="s-hr" style="background:#8b5e3c;"></div><p class="s-accent sm" style="color:#8b5e3c;">The block was never their effort.<br>It was the layer no one had touched.</p>'
+    },
+    {
+      bg: '#143c64', hc: 'rgba(240,237,232,0.4)',
+      html: '<p class="s-label" style="color:#c8b49a;">NEURORESET MIAMI</p><p class="s-h xs" style="color:#f0ede8;">Not coaching.<br>Not mindset work.</p><div class="s-hr" style="background:rgba(240,237,232,0.25);"></div><p class="s-body sm" style="color:rgba(240,237,232,0.72);">A direct neurological intervention - working on the operating system beneath your decisions, your focus, your stress response.</p>'
+    },
+    {
+      bg: '#f4f3ef', hc: 'rgba(28,28,40,0.35)',
+      html: '<p class="s-h xs" style="color:#1c1c28;">Comment RESET below.</p><div class="s-hr" style="background:#8b5e3c;margin:44px 0;"></div><p class="s-accent" style="color:#8b5e3c;">I\'ll send you the details<br>on the discovery call.</p>'
+    }
     ]
   }
 ];
@@ -556,13 +513,15 @@ var SVPOSTS = [
 
     function render() {
       var s = post.slides[current];
+      var numStr = String(current + 1).padStart(2, '0');
+      var totStr = String(total).padStart(2, '0');
       container.innerHTML =
         '<div class="sv-slide" style="background:' + s.bg + ';">' +
-          '<span style="position:absolute;top:12px;left:14px;font-family:DM Sans,sans-serif;font-size:10px;letter-spacing:.08em;color:' + s.hc + ';">@arturomesquite</span>' +
-          '<span style="position:absolute;top:12px;right:14px;font-family:DM Sans,sans-serif;font-size:10px;letter-spacing:.08em;color:' + s.hc + ';">' + s.num + ' / ' + s.tot + '</span>' +
+          '<span style="position:absolute;top:27px;left:32px;font-family:DM Sans,sans-serif;font-size:20px;letter-spacing:5px;text-transform:uppercase;color:' + s.hc + ';">@arturomesquite</span>' +
+          '<span style="position:absolute;top:27px;right:32px;font-family:DM Sans,sans-serif;font-size:20px;letter-spacing:5px;color:' + s.hc + ';">' + numStr + ' / ' + totStr + '</span>' +
           s.html +
         '</div>';
-      counter.textContent = String(current + 1).padStart(2, '0') + ' / ' + String(total).padStart(2, '0');
+      counter.textContent = numStr + ' / ' + totStr;
     }
 
     frame.querySelector('.sv-prev').addEventListener('click', function() {
